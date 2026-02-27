@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creator Connect India</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0b0f1a;
+    color:white;
+    scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+.navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,0.6);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:700;
+    color:#00e5ff;
+}
+
+.nav-links a{
+    margin-left:25px;
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#00e5ff;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:0 20px;
+    background:linear-gradient(135deg,#0b0f1a,#111a2f);
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    opacity:.8;
+    margin-bottom:30px;
+}
+
+.btn{
+    padding:14px 30px;
+    background:#00e5ff;
+    color:black;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+/* SECTIONS */
+section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:50px;
+}
+
+/* SERVICES */
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#111a2f;
+    padding:30px;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+/* STATS */
+.stats{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    text-align:center;
+}
+
+.stat h2{
+    color:#00e5ff;
+    font-size:36px;
+}
+
+/* FORM */
+form{
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input, select, textarea{
+    padding:14px;
+    border-radius:10px;
+    border:none;
+    background:#111a2f;
+    color:white;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:30px;
+    background:#05070f;
+}
+
+/* WHATSAPP */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px 18px;
+    border-radius:50%;
+    font-size:22px;
+    text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="logo">Creator Connect India</div>
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+    <div>
+        <h1>Connecting Brands With Powerful Creators</h1>
+        <p>India’s fast-growing influencer marketing agency.</p>
+        <button class="btn">Get Started</button>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services">
+        <div class="card">Influencer Marketing</div>
+        <div class="card">Creator Management</div>
+        <div class="card">Brand Campaigns</div>
+        <div class="card">Social Media Growth</div>
+    </div>
+</section>
+
+<!-- STATS -->
+<section>
+    <h2 class="section-title">Our Impact</h2>
+    <div class="stats">
+        <div class="stat"><h2>500+</h2><p>Creators</p></div>
+        <div class="stat"><h2>200+</h2><p>Brands</p></div>
+        <div class="stat"><h2>1M+</h2><p>Reach Generated</p></div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2 class="section-title">Work With Us</h2>
+    <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <select>
+            <option>I am a Brand</option>
+            <option>I am a Creator</option>
+        </select>
+        <textarea rows="4" placeholder="Tell us about your campaign"></textarea>
+        <button class="btn">Submit</button>
+    </form>
+</section>
+
+<footer>
+    © 2026 Creator Connect India. All rights reserved.
+</footer>
+
+<a class="whatsapp" href="https://wa.me/91XXXXXXXXXX">💬</a>
+
+</body>
+</html>
